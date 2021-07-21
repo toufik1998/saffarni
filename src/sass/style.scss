@@ -1,0 +1,155 @@
+@import './variable';
+
+
+@font-face{
+    font-family: "otoman";
+    src: url(../fonts/OtomanopeeOne-Regular.ttf);
+}
+
+body{
+    font-family: "otoman", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+}
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow-x: hidden;
+}
+///////////////////style of navigation///////////////
+.navigation{
+    .navbar{
+        padding: 0 80px !important;
+        box-shadow: 0px 3px 6px 3px rgb(0 0 0 / 6%);
+
+        .navbar-brand{
+            img{
+                width: 70%;
+            }
+        }
+
+        .navbar-nav{
+            li > a{
+                color: $color-dark !important;
+                text-transform: capitalize;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+
+
+                &:hover,
+                &:active,
+                &:focus{
+                    color: $color-primary-dark !important;
+                    border-bottom: 1px solid $color-primary-dark;
+                }
+            }
+
+            .active a{
+                color: $color-primary-dark !important;
+                border-bottom: 1px solid $color-primary-dark;
+            }
+        }
+    }
+}
+
+///////////////////////style of header//////////////////
+.header{
+    background-image: url(../images/saharra.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__content{
+        color: $color-white;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin: 5rem 1rem;  
+        line-height: 3rem;
+        text-shadow: 2px 2px 40px rgb(0 0 0 / 40%);
+    }
+    
+    
+}
+
+/////////////////style of section services/////////////////////
+.section-services{
+    background-color: $color-grey-light1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .services-card{
+        border: 1px solid $color-grey-light1;
+        background-color: $color-white;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        padding: 3rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+        height: 100%;  
+
+        &:hover{
+            box-shadow: 0px 0px 30px rgb(0 0 0 / 40%);
+        }
+
+        &__icon{
+            text-align: center;
+            color: $color-primary-dark;
+            padding-bottom: 1.5rem;
+        }
+
+        &__title{
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+        }
+
+        &__text{
+            color: $color-grey-dark-3;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    
+}
+
+.heading{
+    color: $color-dark;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+
+/////////////style of section tours//////////
+.section-tours{
+    background-color: $color-white;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.card-body{
+    color: $color-grey-dark;
+
+    a{
+        display: flex;
+        //flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-top: 2rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
