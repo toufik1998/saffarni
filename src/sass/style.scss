@@ -153,3 +153,100 @@ body{
         -o-border-radius: 5px;
     }
 }
+
+///////////////style of section contact us/////////////////
+.section-contact{
+    background-color: rgba($color-primary, 0.8);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .map{
+        box-shadow: 0px 0px 30px rgb(0 0 0 / 40%);
+    }
+
+    form{
+        .error{
+            color: red;
+        }
+
+        .form-control{
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 1.3rem;
+
+        }
+
+        .btn{
+            width: 40%;
+            text-align: center;
+            color: $color-dark;
+            padding: .5rem;
+
+            &:hover,
+            &:active,
+            &:focus{
+                color: $color-white;
+                background-color: transparent;
+                border: 1px solid $color-grey-light2;
+            }
+        }
+    }
+}
+
+::placeholder{
+    font-size: .8rem;
+}
+
+///////////style footer////////////
+.section-footer{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: $color-dark;  
+    
+    .social-media{
+        ul{
+            li{
+                a {
+                    background-color: $color-white;
+                    color: $color-primary-dark;
+                    width: 4rem;
+                    height: 4rem;
+                    text-align: center;
+                    line-height: 4rem;
+                    border-radius: .3rem;
+                    -webkit-border-radius: .3rem;
+                    -moz-border-radius: .3rem;
+                    -ms-border-radius: .3rem;
+                    -o-border-radius: .3rem;
+                    margin-right: .5rem;
+                    display: block;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+
+                    &:hover,
+                    &:active,
+                    &:focus{
+                        background-color: $color-primary;
+                        color: $color-white !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright{
+        color: $color-white;
+        text-transform: capitalize;
+
+        .text{
+            .icon{
+                color: $color-primary-dark;
+                margin-right: .5rem;
+            }
+        }
+        
+    }
+}
