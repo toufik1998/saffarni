@@ -91,6 +91,12 @@ module.exports = {
             filename: 'index.html',
         }),
 
+        new HtmlWebpackPlugin({
+          template: './src/sign.html',
+          filename: 'sign.html',
+        }),
+
+        
         
 
         new MiniCssExtractPlugin({

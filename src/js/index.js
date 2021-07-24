@@ -28,6 +28,8 @@ $(document).ready(function(){
     var year = date.getFullYear();
     document.getElementById('date').innerHTML = year;
 
+    
+
 });
 
 
