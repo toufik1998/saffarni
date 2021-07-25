@@ -1,0 +1,66 @@
+.header-egypt{
+    background-image: linear-gradient(to right bottom,
+    rgba($color-gold, 0.3),
+    rgba($color-golde, 0.3)),
+     url(../images/egypt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__content{
+        color: $color-white;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin: 5rem 1rem;  
+        line-height: 3rem;
+        text-shadow: 2px 2px 40px rgb(0 0 0 / 40%);
+    }
+    
+    
+}
+
+
+//////////style the gallery///////
+.carousel-egypt{
+    .carousel{
+        position: relative;
+        .carousel-item{
+            img{
+                height: 45rem;
+            }
+
+            .overlay{
+                 position: absolute;
+                 background-color: rgba($color-gold, 0.3);
+                 top: 0;
+                 left: 0;
+                 height: 100%;
+                 width: 100%;
+             }
+        }
+
+        .carousel-indicators{
+             position: absolute;
+             bottom: -3rem;
+             right: 0;
+            img{
+                width: 5rem;
+                height: 5rem;
+                margin: 2rem .5rem 0 0;
+                
+
+
+                 
+                &.active{
+                    border: 2px solid $color-primary-dark;
+                }
+            }
+        }
+
+        
+    }
+}

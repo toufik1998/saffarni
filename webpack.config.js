@@ -96,6 +96,18 @@ module.exports = {
           filename: 'sign.html',
         }),
 
+        new HtmlWebpackPlugin({
+          template: './src/turqie.html',
+          filename: 'turqie.html',
+        }),
+
+        new HtmlWebpackPlugin({
+          template: './src/egypt.html',
+          filename: 'egypt.html',
+        }),
+
+       
+
         
         
 
