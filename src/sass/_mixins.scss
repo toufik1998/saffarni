@@ -1,0 +1,25 @@
+/////transition///////
+@mixin transition {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+//////border radius/////
+@mixin bradius($b) {
+    border-radius: $b;
+    -webkit-border-radius: $b;
+    -moz-border-radius: $b;
+    -ms-border-radius: $b;
+    -o-border-radius: $b;
+}
+
+
+////////////////flex////////////
+@mixin dflex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
